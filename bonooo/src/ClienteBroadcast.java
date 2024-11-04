@@ -10,9 +10,7 @@ public class ClienteBroadcast {
     private static DatagramSocket socket = null;
     public static void main(String[] args) throws IOException {
       InetAddress localHost = InetAddress.getLocalHost();
-
       String hostname = localHost.getHostName();
-
       String ipAddress = localHost.getHostAddress();
       while (true){
         try {
@@ -26,7 +24,6 @@ public class ClienteBroadcast {
       }
         
     }
-
     public static void generar_broadcast(String broadcastMessage, InetAddress address) throws IOException {
         socket = new DatagramSocket();
         //Importantee
@@ -34,7 +31,7 @@ public class ClienteBroadcast {
 
         byte[] buffer = broadcastMessage.getBytes();
         //Se envía al puerto UDP 4445, pero cualquiera por encima de 1024 debería servir
-        DatagramPacket packet  = new DatagramPacket(buffer, buffer.length, address, 4445);
+        DatagramPacket packet  = new DatagramPacket(buffer, buffer.length, address,4445);
         socket.send(packet);
         socket.close();
     }

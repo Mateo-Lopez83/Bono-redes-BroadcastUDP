@@ -5,3 +5,5 @@ hostname: LAPTOP-OS34J2F9con direccion: 192.168.5.108
 hostname: LAPTOP-OS34J2F9con direccion: 192.168.5.108
 hostname: LAPTOP-OS34J2F9con direccion: 192.168.5.108
 hostname: LAPTOP-OS34J2F9con direccion: 192.168.5.108
+hostname: LAPTOP-OS34J2F9con direccion: 192.168.5.108
+hostname: LAPTOP-OS34J2F9con direccion: 192.168.5.108
